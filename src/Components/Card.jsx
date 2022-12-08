@@ -35,10 +35,8 @@ const Card = ({ name, username, id }) => {
                 <h5>{name}</h5>
             </Link>
             <p className="card-text">{username}</p>
-            <button
-                onClick={favorite ? removeFav : addFav}
-                className={`favButton btn btn-${isDarkMode ? "dark" : "light"} 
-            }`}>
+            <button className="fav"
+                onClick={favorite ? removeFav : addFav}>
                 {favorite ? "Remove ⭐" : "Add ⭐"}
             </button>
         </div>

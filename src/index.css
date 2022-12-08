@@ -27,12 +27,25 @@ code {
 
 h1{
   text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+h2{
+  margin: 0px;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav{
   display: flex;
   justify-content: flex-start;
   padding: 1rem;
+  background-color: #eee;
+}
+
+main{
+  min-height: calc(100vh - 73px - 117px)
 }
 
 a{
@@ -45,16 +58,14 @@ a:hover{
   color: rgb(136, 136, 136);
 } 
 
-footer {
+footer{
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
-  margin-top: 2rem;
 }
 
 footer > img{
@@ -85,12 +96,12 @@ form{
   border: 0.5px solid rgb(136, 136, 136);
 }
 
-.card > img {
+.card > img{
     width: 100%;
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgb(54, 80, 151);
 }
 
 .card-grid{
@@ -103,7 +114,7 @@ form{
   margin: 0 auto;
 }
 
-table {
+table{
  border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
@@ -112,13 +123,13 @@ table {
 
 }
 
-td, th {
+td, th{
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even){
   background-color: #dddddd;
 }
 
@@ -126,13 +137,50 @@ tr:nth-child(even) {
   background-color: #12121296;
   color: white;
 }
-.dark > a {
+
+.dark a{
   color: white;
 }
-h5 {
+
+nav.dark{
+  background-color: #1f1d1d;
+  color: white;
+}
+
+.dark footer{
+  background-color: #1f1d1d;
+  color: white;
+}
+
+h5{
     margin: 4px
 }
 
-p {
+p{
     margin: 4px;
+}
+
+.logos img{
+  height: 40px;
+  filter: invert(1);
+}
+
+.dark .logos img{
+  height: 40px;
+  filter: invert(0);
+}
+
+.backTop{
+  background-color: rgb(198, 61, 61);
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dark .backTop{
+  color:#ccc;
+}
+
+.dark .logoDh{
+  filter: invert(1);
 }

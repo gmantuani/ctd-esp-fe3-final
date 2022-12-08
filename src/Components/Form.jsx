@@ -3,7 +3,8 @@ import React, { useState } from "react";
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
-
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -21,11 +22,11 @@ const Form = () => {
   const onSumbmitForm = (e) => {
     e.preventDefault();
     if (validateName(name) && /\S+@\S+\.\S+/.test(email)) {
-      document.querySelector("#mensaje").innerHTML = "Thanks" +
+      setMessage ("Thanks " +
       name +
-      ", te contactaremos cuando antes vía mail"
+      ", check your email soon")
     } else {
-      document.querySelector("#mensaje_error").innerHTML = "Por favor verifique su información nuevamente"
+      setErrorMessage ("Invalid credentials")
     }
   };
 
@@ -47,8 +48,8 @@ const Form = () => {
         />
         <button type="submit">Send</button>
       </form>
-      <p id="mensaje_error"></p>
-      <h3 id = "mensaje"> </h3>
+      <p style={{textAlign: "center"}}> {errorMessage}</p>
+      <p style={{textAlign: "center"}}> {message} </p>
     </>
   );
 };

@@ -11,14 +11,14 @@ const Home = () => {
   console.log(state);
 
   return (
-    <main className="">
+    <>
       <h1>Home</h1>
       <div className="card-grid">
         {state.data.map(dentist => <Card id={dentist.id} name={dentist.name} username={dentist.username} />)}
         {/* Aqui deberias renderizar las cards */}
       
       </div>
-    </main>
+    </>
   );
 };
 
