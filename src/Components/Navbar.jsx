@@ -12,15 +12,15 @@ const Navbar = () => {
   return (
     <nav className={state.bgFlag}>
       <Link  to="/Home" style={{fontSize:"23px"}}>
-        <span style={{color:"red"}}>D</span>
+        <span style={{color:"red"}} className='title'>D</span>
           H Odonto
       </Link>
       <div>
         <Link to="/Home">Home</Link>
         <Link to="/Contact">Contact</Link>
         <Link to="/Favs">Favs</Link>
+      <button onClick={()=> dispatch({type:state.bgFlag})}>{state.bgFlag=== "dark" ? "🌇": "🌃"}</button>
       </div>
-      <button onClick={()=> dispatch({type:state.bgFlag}) }>Change theme</button>
     </nav>
   )
 }

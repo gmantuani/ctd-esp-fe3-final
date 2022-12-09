@@ -39,10 +39,12 @@ h2{
 
 nav{
   display: flex;
-  justify-content: flex-start;
   padding: 1rem;
   background-color: #eee;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 main{
   min-height: calc(100vh - 73px - 117px)
@@ -60,7 +62,7 @@ a:hover{
 
 footer{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -94,6 +96,7 @@ form{
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  margin-bottom: 25px;
 }
 
 .card > img{

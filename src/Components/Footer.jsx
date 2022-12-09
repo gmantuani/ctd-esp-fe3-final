@@ -21,7 +21,6 @@ const Footer = () => {
             <img src="images/ico-whatsapp.png" alt="" />
             <img src="images/ico-tiktok.png" alt="" />
           </div>
-
       </footer>
     </div>
   );
