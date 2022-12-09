@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <>
       <h2>Want to know more?</h2>
-      <p style={{textAlign:"center"}}>Send us your questions and we will contact you</p>
-      <Form/>
+      <p style={{ textAlign: "center" }}>Send us your questions and we will contact you</p>
+      <Form />
     </>
   )
 }

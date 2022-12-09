@@ -4,7 +4,7 @@ import { ContextGlobal } from "./utils/globalContext";
 import { Link } from "react-router-dom";
 
 
-const Card = ({ name, username, id }) => {
+const Card = ({ name, username, id, handleFav }) => {
     const [favorite, setFavorite] = useState(isFavorited(id));
     const { state } = useContext(ContextGlobal);
     const isDarkMode = state.theme === "dark" || false;
@@ -22,6 +22,9 @@ const Card = ({ name, username, id }) => {
     const removeFav = () => {
         const favorite = removeFavInStorage(id);
         isFavorite(favorite);
+        if (handleFav) {
+            handleFav()
+        }
     };
 
 

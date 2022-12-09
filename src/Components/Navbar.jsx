@@ -8,18 +8,18 @@ import { ContextGlobal } from './utils/globalContext'
 
 const Navbar = () => {
   const { state, dispatch } = useContext(ContextGlobal)
-  console.log(state.navbgColor)
+
   return (
     <nav className={state.bgFlag}>
-      <Link  to="/Home" style={{fontSize:"23px"}}>
-        <span style={{color:"red"}} className='title'>D</span>
-          H Odonto
+      <Link to="/Home" style={{ fontSize: "23px" }}>
+        <span style={{ color: "red" }} className='title'>D</span>
+        H Odonto
       </Link>
       <div>
         <Link to="/Home">Home</Link>
         <Link to="/Contact">Contact</Link>
         <Link to="/Favs">Favs</Link>
-      <button onClick={()=> dispatch({type:state.bgFlag})}>{state.bgFlag=== "dark" ? "🌇": "🌃"}</button>
+        <button onClick={() => dispatch({ type: state.bgFlag })}>{state.bgFlag === "dark" ? "🌇" : "🌃"}</button>
       </div>
     </nav>
   )

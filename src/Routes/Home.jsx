@@ -8,15 +8,13 @@ import Card from '../Components/Card';
 const Home = () => {
   const { state, dispatch } = useContext(ContextGlobal);
 
-  console.log(state);
-
   return (
     <>
       <h1>Home</h1>
       <div className="card-grid">
-        {state.data.map(dentist => <Card id={dentist.id} name={dentist.name} username={dentist.username} />)}
+        {state.data.map(dentist => <Card id={dentist.id} key={dentist.id} name={dentist.name} username={dentist.username} />)}
         {/* Aqui deberias renderizar las cards */}
-      
+
       </div>
     </>
   );

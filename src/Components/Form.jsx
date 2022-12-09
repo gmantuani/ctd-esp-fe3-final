@@ -22,11 +22,13 @@ const Form = () => {
   const onSumbmitForm = (e) => {
     e.preventDefault();
     if (validateName(name) && /\S+@\S+\.\S+/.test(email)) {
-      setMessage ("Thanks " +
-      name +
-      ", check your email soon")
+      setMessage("Thanks " +
+        name +
+        ", check your email soon")
+      console.log(name)
+      console.log(email)
     } else {
-      setErrorMessage ("Invalid credentials")
+      setErrorMessage("Invalid credentials")
     }
   };
 
@@ -48,8 +50,8 @@ const Form = () => {
         />
         <button type="submit">Send</button>
       </form>
-      <p style={{textAlign: "center"}}> {errorMessage}</p>
-      <p style={{textAlign: "center"}}> {message} </p>
+      <p style={{ textAlign: "center" }}> {errorMessage}</p>
+      <p style={{ textAlign: "center" }}> {message} </p>
     </>
   );
 };

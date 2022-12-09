@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.favButton{
+.favButton {
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
   border: none;
@@ -21,65 +21,67 @@ code {
 }
 
 .favButton:hover {
-    background-color: rgba(195, 111, 8, 0.295);
+  background-color: rgba(195, 111, 8, 0.295);
 }
 
 
-h1{
+h1 {
   text-align: center;
   margin: 0;
   padding: 1rem;
 }
 
-h2{
+h2 {
   margin: 0px;
   padding: 1rem;
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem 8rem;
   background-color: #eee;
   justify-content: space-between;
   align-items: center;
 }
 
 
-main{
+main {
   min-height: calc(100vh - 73px - 117px)
 }
 
-a{
+a {
   color: #000;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
-a:hover{
-  color: rgb(136, 136, 136);
-} 
 
-footer{
+a:hover {
+  color: rgb(136, 136, 136);
+}
+
+footer {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 8rem;
   position: relative;
   bottom: 0;
   height: 40px;
 }
 
-footer > img{
+footer>img {
   width: 200px;
   margin: 0;
 }
-footer > p{
+
+footer>p {
   margin: 0;
   padding-top: 0.7rem;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -88,7 +90,7 @@ form{
   margin: 0 auto;
 }
 
-.card{
+.card {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -99,15 +101,15 @@ form{
   margin-bottom: 25px;
 }
 
-.card > img{
-    width: 100%;
+.card>img {
+  width: 100%;
 }
 
-.card:hover{
-  border: 0.5px solid rgb(54, 80, 151);
+.card:hover {
+  border: 0.5px solid rgb(134, 29, 29);
 }
 
-.card-grid{
+.card-grid {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
@@ -117,73 +119,78 @@ form{
   margin: 0 auto;
 }
 
-table{
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
 
 }
 
-td, th{
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
+.dark tr:nth-child(even) {
+  background-color: #a60c0c;
+}
+
+.dark {
   background-color: #12121296;
   color: white;
 }
 
-.dark a{
+.dark a {
   color: white;
 }
 
-nav.dark{
+nav.dark {
   background-color: #1f1d1d;
   color: white;
 }
 
-.dark footer{
+.dark footer {
   background-color: #1f1d1d;
   color: white;
 }
 
-h5{
-    margin: 4px
+h5 {
+  margin: 4px
 }
 
-p{
-    margin: 4px;
+p {
+  margin: 4px;
 }
 
-.logos img{
+.logos img {
   height: 40px;
   filter: invert(1);
 }
 
-.dark .logos img{
+.dark .logos img {
   height: 40px;
   filter: invert(0);
 }
 
-.backTop{
-  background-color: rgb(198, 61, 61);
+.backTop {
+  background-color: #a60c0c;
   padding: 0.5rem;
   text-align: center;
   cursor: pointer;
 }
 
-.dark .backTop{
-  color:#ccc;
+.dark .backTop {
+  color: #ccc;
 }
 
-.dark .logoDh{
+.dark .logoDh {
   filter: invert(1);
 }

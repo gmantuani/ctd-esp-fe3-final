@@ -11,7 +11,7 @@ const Favs = () => {
 
   useEffect(() => {
     setFavorite(getFavFromStorage());
-  }, [favs])
+  }, [])
 
   return (
     <>
@@ -21,8 +21,8 @@ const Favs = () => {
         {/* Deberan renderizar una Card por cada uno de ellos */}
         {favs
           ? favs.map((dentistFav) => (
-              <Card {...dentistFav} key={dentistFav.id} />
-            ))
+            <Card {...dentistFav} key={dentistFav.id} id={dentistFav.id} handleFav={() => setFavorite(getFavFromStorage())} />
+          ))
           : null}
       </div>
     </>

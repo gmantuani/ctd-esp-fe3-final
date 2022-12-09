@@ -6,13 +6,14 @@ export const actions = {
 
 }
 
-export const reducer = (state, action) =>{
+export const reducer = (state, action) => {
     switch (action.type) {
         case actions.SET_THEME_DARK:
-            return ({...state, theme: "dark"})
+            return ({ ...state, theme: "dark" })
         case actions.SET_THEME_LIGHT:
-            return  ({...state, theme: "light"})
+            return ({ ...state, theme: "light" })
         default: {
-            return state}
+            return state
+        }
     }
 }
