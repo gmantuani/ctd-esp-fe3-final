@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <footer>
         <img className='logoDh' src="images/DH.png" alt="" />
-        <div className='logos'>
+        <div className='logos' grap>
           <img src="images/ico-facebook.png" alt="" />
           <img src="images/ico-instagram.png" alt="" />
           <img src="images/ico-whatsapp.png" alt="" />

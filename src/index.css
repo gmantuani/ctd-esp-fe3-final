@@ -177,7 +177,7 @@ p {
 
 .dark .logos img {
   height: 40px;
-  filter: invert(0);
+  filter: invert(0);  
 }
 
 .backTop {
