@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
@@ -17,10 +17,7 @@ const Detail = () => {
   useEffect(() => {
     axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then(res => {
-        {
-          setOdontologo(res.data)
-        }
-      })
+        { setOdontologo(res.data)}})
       .catch(err => console.log(err))
   }, [id])
   {/* aqui deberan renderizar la informacion en detalle de un user en especifico */ }
